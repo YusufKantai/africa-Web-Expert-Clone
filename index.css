@@ -1,0 +1,237 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+i{
+    color: #fff;
+}
+body{
+    width: 100%;   
+    background-color: #fff; 
+    overflow-x: hidden;
+   
+}
+nav{
+    position:fixed;
+    right: 0;
+    top: 0;
+    height:100vh ;
+    background: rgb(2, 2, 87);
+    padding:10px 20px;
+    width: 50%;
+    z-index: 1;
+    max-width: 400px;
+    display: block;
+    display: none;
+
+
+}
+nav i{
+    float: right;
+    padding: 1px 3px;
+    border: 2px solid grey;
+    color: gray;
+    font-size: 18px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+nav ul{
+    display: block;
+    margin-left: 40px;    
+}
+nav ul a li{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 23px;
+}
+
+/* start of header styles */
+header{
+    background: rgb(1, 1, 52);
+    padding: 20px 50px;
+    color: #fff;
+   
+}
+header .top{
+    display: flex;
+    justify-content: space-between;
+}
+header .top .left{
+    display: flex;
+    width: fit-content;
+    border: 8px solid #fff;
+    border-radius: 50px;
+    padding: 12px 10px;
+    cursor: pointer;
+}
+header .top .left h3{
+    font-size: 20px;
+    font-weight: 100;
+    margin-right: 80px;
+}
+header .top .left button{
+    background-color: red;
+    position: absolute;
+    left: 319px;
+    border: none;
+    text-align: center;
+    padding: 8px 22px;
+    top: 23px;
+    border-top-right-radius:45px;
+    border-bottom-right-radius:45px;
+    cursor: pointer;
+}
+header .top .left button i{
+    font-size: 40px;
+    text-align: center;
+}
+header #pointer{
+    color: rgb(34, 237, 15);
+    top: 25px;
+    position: absolute;
+    left: 10px;
+    font-size: 50px;
+}
+header .top .right i{
+    border: 2px solid #fff;
+    padding: 10px;
+    font-size: 30px;
+    transition: 5ms ease;
+}
+header .top .right i:hover{
+    color: red;
+    border: 2px solid red;
+    cursor: pointer;
+}
+
+header .center{
+    margin-top: 70px;
+}
+header .center h1{
+    font-weight: 100;
+    font-size: 38px;
+}
+header .center p{
+    margin-top: 10px;
+    line-height: 34px;
+    text-align: justify;
+    font-size: 18px;
+    color: rgb(161, 152, 133);
+    font-weight: 600;
+    padding-top: 10px;
+}
+header .bottom p{
+    color:rgb(206, 4, 4) ;
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: 100;
+    letter-spacing: 4px;
+    font-weight: 100;
+    padding: 20px 0px;
+}
+
+/* start of main container */
+main{
+    padding: 40px 50px;
+}
+main .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+main .container .div{
+    max-width: 400px;
+    width:32%; 
+    margin-top: 30px;
+    text-align: center;
+}
+main h1{
+    font-size: 38px;
+    color: red;
+    font-weight: 100;
+}
+
+main .container .div img{
+    width: 100%;
+}
+main .container .div button{
+    background-color: #ffffff00;
+    font-size: 26px;
+    border: 2px solid black;
+    color: black;
+    word-spacing: 5px;
+    width: 80%;
+    padding: 10px 0px;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 1s ease;
+
+}
+main .container .div button:hover{
+    color: red;
+    border: 2px solid red;
+    cursor: pointer;
+
+}
+main .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px; /* Add negative margin to counteract the padding on divs */
+}
+
+main .container .div {
+    flex: 0 1 calc(32% - 20px); /* Adjusted width calculation */
+    max-width: 500px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 10px; /* Add padding to create spacing between divs */
+}
+
+@media screen and (max-width: 768px) {
+    main .container .div {
+        flex: 0 1 calc(50% - 20px); /* Change to 50% width on smaller screens */
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    main .container .div {
+        flex: 0 1 calc(100% - 20px); /* Change to 100% width on even smaller screens */
+    }
+}
+main #whatsapp{
+    font-size: 70px;
+    position:fixed;
+    cursor: pointer;
+    top: 85vh;
+
+}
+main #call{
+    font-size: 60px;
+    position:fixed;
+    cursor: pointer;
+    top: 85vh;
+    right: 20px;
+    z-index: 3;
+
+}
+
+
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+
+
+
+
